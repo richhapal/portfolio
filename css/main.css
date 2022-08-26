@@ -144,7 +144,7 @@ body {
   height: 350px;
   border-radius: 10px 0;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (max-width: 777px) {
@@ -174,4 +174,4 @@ body {
 }
 .skill .skill-logos {
   padding-top: 25px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
