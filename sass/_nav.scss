@@ -1,0 +1,58 @@
+.navfixed {
+  width: 100%;
+  position: sticky;
+}
+
+.nav {
+  display: flex;
+  max-width: 100%;
+  // border: 1px dashed $green;
+  padding: 0.5rem 4rem;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    width: 50%;
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    a {
+      // color: $lightest-slate;
+      color: $green;
+      font-weight: 500;
+    }
+  }
+
+  #{&}-item {
+    display: flex;
+    justify-content: flex-end;
+    ol {
+      font-size: 0.8rem;
+      display: flex;
+      gap: 1.2rem;
+      text-align: center;
+
+      li {
+        &::marker {
+          color: $green;
+        }
+        padding-right: 1rem;
+        font-weight: 600;
+      }
+      a {
+        color: $lightest-slate;
+
+        :hover {
+          color: $green;
+          transition: all 1s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 777px) {
+  .navfixed {
+    margin-bottom: 100px;
+  }
+}

@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  margin: 50px auto;
+  padding: 0 8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  background-color: #112240;
+}
+
+@media (max-width: 777px) {
+  section {
+    margin: 100px 0;
+    padding: 125px 0;
+  }
+}
+.navfixed {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.nav {
+  display: flex;
+  max-width: 100%;
+  padding: 0.5rem 4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .logo {
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+}
+.nav .logo a {
+  color: #64ffda;
+  font-weight: 500;
+}
+.nav .nav-item {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav .nav-item ol {
+  font-size: 0.8rem;
+  display: flex;
+  gap: 1.2rem;
+  text-align: center;
+}
+.nav .nav-item ol li {
+  padding-right: 1rem;
+  font-weight: 600;
+}
+.nav .nav-item ol li::marker {
+  color: #64ffda;
+}
+.nav .nav-item ol a {
+  color: #ccd6f6;
+}
+.nav .nav-item ol a :hover {
+  color: #64ffda;
+  transition: all 1s ease-in-out;
+}
+
+@media (max-width: 777px) {
+  .navfixed {
+    margin-bottom: 100px;
+  }
+}
+.about {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #64ffda;
+  cursor: default;
+}
+.about .about-content {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.about .about-content firstLine p {
+  color: #112240;
+}
+.about .about-content .name {
+  color: #ccd6f6;
+  font-size: 40px;
+}
+.about .about-content .jobtitle {
+  font-size: 35px;
+  color: #a8b2d1;
+  white-space: nowrap;
+}
+.about .about-content .description {
+  color: #8892b0;
+}
+.about .about-content .resumeButton {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+.about .about-content .resumeButton a {
+  border: 1px solid #64ffda;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  color: #64ffda;
+}
+.about .about-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 50%;
+}
+.about .about-photo img {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 777px) {
+  .about {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    margin: 100px 0;
+  }
+}
+.skill {
+  margin-top: 25px;
+  padding-top: 70px;
+  color: #64ffda;
+}
+.skill .heading span {
+  color: #ccd6f6;
+}
+.skill .heading span::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 116px;
+  margin-top: -8px;
+  background-color: #a8b2d1;
+}
+.skill .skill-logos {
+  padding-top: 25px;
+}/*# sourceMappingURL=main.css.map */
