@@ -140,11 +140,13 @@ body {
 }
 .about .about-photo img {
   position: relative;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 2 50px;
+  border: 4px solid #64ffda;
+  border-radius: 50%;
   border-radius: 10px 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 777px) {
@@ -174,4 +176,4 @@ body {
 }
 .skill .skill-logos {
   padding-top: 25px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
